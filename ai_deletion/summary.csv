@@ -1,0 +1,10 @@
+,forget_extract_any,forget_extract_any,forget_extract_exact,forget_extract_exact,forget_extract_sampled,forget_extract_sampled,forget_auc,forget_auc,retain_extract_any,retain_extract_any,retain_auc,retain_auc,ppl,ppl,ppl_vs_retrain_pct,ppl_vs_retrain_pct,train_time_s,train_time_s
+,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+model,,,,,,,,,,,,,,,,,,
+base (never fine-tuned),0.0,,0.0,,0.0,,0.5,,0.0,,0.5,,87.113,,-57.342,,,
+original,0.71,0.01,0.66,0.03,0.703,0.015,0.997,0.001,0.67,0.03,0.999,0.0,265.385,5.103,29.954,2.499,200.285,0.934
+retrain,0.0,0.0,0.0,0.0,0.0,0.0,0.546,0.001,0.653,0.021,0.998,0.001,204.214,0.48,0.0,0.235,156.482,0.675
+suppression (budget +10%),0.117,0.125,0.033,0.049,0.113,0.127,0.995,0.0,0.313,0.234,0.998,0.001,277.491,12.854,35.882,6.295,19.696,15.928
+suppression (budget +25%),0.073,0.042,0.017,0.021,0.073,0.042,0.996,0.001,0.357,0.272,0.999,0.001,291.045,32.505,42.519,15.917,19.696,15.928
+unlearning (budget +10%),0.127,0.09,0.087,0.064,0.123,0.093,0.852,0.021,0.197,0.086,0.934,0.018,298.855,8.439,46.344,4.133,99.588,29.49
+unlearning (budget +25%),0.037,0.055,0.023,0.04,0.037,0.055,0.813,0.033,0.443,0.189,0.989,0.007,341.263,12.36,67.111,6.053,99.588,29.49
