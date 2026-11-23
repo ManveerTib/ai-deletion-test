@@ -6,7 +6,7 @@ California's AB 1008 (2024) clarified that personal information can exist in AI 
 
 **Short answer, in this experiment:** no. Training the model to stop revealing an address hid it from prompts, but a privacy test could still tell the model had been trained on it. Only retraining without the data removed that trace.
 
-![Article chart](article_chart.png)
+![Article chart](ai_deletion/article_chart.png)
 
 ## What I tested
 
@@ -55,7 +55,7 @@ What stands out:
 - **Only retraining brought detection close to chance** (AUC 0.546).
 - **Both shortcut methods hurt memory of the records that should have been kept**, and the size of that damage varied widely between runs.
 
-Full results: [`full_results.png`](full_results.png), [`tradeoff_curves.png`](tradeoff_curves.png), [`summary.csv`](summary.csv), [`results.csv`](results.csv).
+Full results: [`full_results.png`](ai_deletion/full_results.png), [`tradeoff_curves.png`](ai_deletion/tradeoff_curves.png), [`summary.csv`](ai_deletion/summary.csv), [`results.csv`](ai_deletion/results.csv).
 
 Fine-tuning on this small dataset raised perplexity on general text compared with the base model, so fluency is always compared with the "before deletion" model.
 
@@ -77,6 +77,8 @@ Fine-tuning on this small dataset raised perplexity on general text compared wit
 The run is seeded. A rerun reproduced every number in the table above.
 
 ## Files
+
+The notebook is in the main folder; all results and charts are in [`ai_deletion/`](ai_deletion/).
 
 | File | Contents |
 |---|---|
